@@ -47,9 +47,10 @@ mymenu.style.display="block";mymenu.style.opacity="0";
       PS4 Firmware <span id="PS4fw"></span></div><br>
     <div style='font-size:20px;color:yellow;margin-top:5px'>KERNEL EXPLOIT</div>
     <form style="margin-top:-5px"id=form1 onclick=doshit()> 
-      Select Kernel Exploit To Use: <input id=v1 type="radio" name="KEX" value="common/exp_jailbreak1.js" onMouseOver="msgs.innerHTML='Latest Kernel Exploit By Sleirsgoevy - 3rd June 2021.'"; onmouseout="msgs.innerHTML='Prb 7.55 Exploit Menu V4 Super Lite'"><label>v1</label>&nbsp;
-      <input id=v2 type="radio" name="KEX" value="common/exp_jailbreak2.js" onMouseOver="msgs.innerHTML='Kernel Exploit By Sleirsgoevy - 27th May 2021.'"; onmouseout="msgs.innerHTML='Prb 7.55 Exploit Menu V4 Super Lite'"><label>v2</label>&nbsp;
-      <input id=v3 type="radio" name="KEX" value="common/exp_jailbreak3.js" onMouseOver="msgs.innerHTML='Kernel Exploit By Sleirsgoevy - 20th May 2021.'"; onmouseout="msgs.innerHTML='Prb 7.55 Exploit Menu V4 Super Lite'"><label>v3</label>
+      Select Kernel Exploit To Use: <input id=v1 type="radio" name="KEX" value="common/exp_jailbreak0.js" onMouseOver="msgs.innerHTML='Latest Kernel Exploit By Sleirsgoevy - 20th july 2021.'"; onmouseout="msgs.innerHTML='Prb 7.55 Exploit Menu V4 Super Lite'"><label>v1</label>&nbsp;
+	  <input id=v2 type="radio" name="KEX" value="common/exp_jailbreak1.js" onMouseOver="msgs.innerHTML='Kernel Exploit By Sleirsgoevy - 3rd June 2021.'"; onmouseout="msgs.innerHTML='Prb 7.55 Exploit Menu V4 Super Lite'"><label>v2</label>&nbsp;
+      <input id=v3 type="radio" name="KEX" value="common/exp_jailbreak2.js" onMouseOver="msgs.innerHTML='Kernel Exploit By Sleirsgoevy - 27th May 2021.'"; onmouseout="msgs.innerHTML='Prb 7.55 Exploit Menu V4 Super Lite'"><label>v3</label>&nbsp;
+      <input id=v4 type="radio" name="KEX" value="common/exp_jailbreak3.js" onMouseOver="msgs.innerHTML='Kernel Exploit By Sleirsgoevy - 20th May 2021.'"; onmouseout="msgs.innerHTML='Prb 7.55 Exploit Menu V4 Super Lite'"><label>v4</label>
     </form>
     <form style="margin:-25px 0 5px 0" id=form2 onclick=doshit()>
       Run Kernel Exploit Automatically After Webkit:<input id=a1 type="radio" name="AUTO" value="yes" onMouseOver="msgs.innerHTML='Auto Kernel Exploit ON. This Option Auto loads Webkit & Selected Exploit Automatically When Entering Browser'"; onmouseout="msgs.innerHTML='Prb 7.55 Exploit Menu V4 Super Lite'"><label>ON</label>&nbsp;&nbsp;
@@ -128,7 +129,7 @@ function getScript(source,callback){var gs=document.createElement('script');gs.s
 function loadScript2(){getScript("common/exp_loaderPL.js",function(){});}
 </script>
 <script>
-if (localStorage.kexID==null)localStorage.kexID="v2";
+if (localStorage.kexID==null)localStorage.kexID="v3";
 if (localStorage.autoID==null)localStorage.autoID="a2";
 document.getElementById(localStorage.kexID).checked=true;
 document.getElementById(localStorage.autoID).checked=true;
